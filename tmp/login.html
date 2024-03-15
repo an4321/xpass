@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xpass</title>
+
+        <link href="../static/output.css" rel="stylesheet">
+    </head>
+    <body class="bg-[#181825] text-[#CDD7FE] flex justify-center items-center h-auto">
+        <main class="container mx-auto p-8 mt-12 bg-[#24273A] rounded-2xl sm:w-[40%] w-4/5 border-transparent">
+            <nav class="flex justify-between items-center ">
+                <h1 class="text-3xl font-bold">XPass</h1>
+            </nav>
+
+            <div class="flex flex-col gap-2 px-8 pt-12">
+                <input placeholder="Email" type="email" class="input-box">
+                <input placeholder="Password" type="password" class="input-box">
+
+                <label class="flex cursor-pointer items-center justify-between p-1">
+                    Are you a new user?
+                    {% include 'components/checkbox.html' %}
+                </label>
+
+                <a href="/" class="my-8">
+                    <button class="p-btn ">
+                        Log in
+                    </button>
+                </a>
+            </div>
+
+        </main>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+
+<form class="flex flex-col gap-2 p-8">
+
+    <input placeholder="Site" type="text" class="input-box">
+
+    <input placeholder="User name" type="text" class="input-box">
+
+    <input placeholder="Password" type="password" class="input-box">
+
+    <label class="flex cursor-pointer items-center justify-between p-1">
+        Show password
+        {% include 'components/checkbox.html' %}
+    </label>
+
+    <a href="/" class="pt-8">
+        <button class="p-btn">
+            Save
+        </button>
+    </a>
+</form>

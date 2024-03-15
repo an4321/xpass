@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-box {
+    @apply w-full placeholder-[#CDD4FE] rounded-lg border-none bg-[#181825] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#B4BEFE];
+}
+
+.p-btn {
+    @apply w-full inline-block cursor-pointer rounded-md bg-[#181825] px-4 py-3.5 text-center text-sm font-semibold text-[#CDD7FE] transition duration-200 ease-in-out hover:bg-[#B4BEFE] hover:text-[#181825] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-700 focus-visible:ring-offset-2 active:scale-95
+}

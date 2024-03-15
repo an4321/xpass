@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xpass</title>
+
+        <link href="../static/output.css" rel="stylesheet">
+
+        <!-- <script src="../static/htmx.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@2.x.x/dist/alpine.js" defer></script>
+    </head>
+    <body class="bg-[#181825] text-[#CDD7FE] ">
+        <main class="container mx-auto p-8 mt-8 bg-[#24273A] rounded-2xl md:w-3/5 w-5/6 border-transparent">
+            <nav class="flex justify-between items-center ">
+                <h1 class="text-3xl font-bold">XPass</h1>
+                <button class="font-bold bg-[#181825] border-2 border-[#181825] rounded-lg text-[#CDD7FE] px-4 py-2 text-base hover:border-[#CDD7FE] cursor-pointer transition" > @user123 </button>
+            </nav>
+
+            <br>  
+
+            <div class="flex space-x-2 my-2 justify-start">
+                <div class="flex items-center">
+                    <button class="w-9 h-9 text-3xl border-transparent rounded-[10px] bg-[#B4BEFE] text-[#40425a] hover:bg-[#9aa2d9] "> + </button>
+                </div>
+
+                {% include 'components/search.html' %}
+            </div>
+
+
+            <table id="passwordTable" class="w-full bg-[#181825] shadow-md rounded-lg overflow-hidden">
+                <tbody>
+                    {% include 'components/tr.html' %}
+                    {% include 'components/tr.html' %}
+                    {% include 'components/tr.html' %}
+                    {% include 'components/tr.html' %}
+                </tbody>
+            </table>
+
+        </main>
+    </body>
+</html>
+
